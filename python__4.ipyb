@@ -1,0 +1,111 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyNsvi+/w6+4vwVCwHSyWk6/",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/25pa1a45c9-likki/python_lab/blob/main/python__4.ipyb\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 1,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "H8a64HWXawgG",
+        "outputId": "3083f216-ecf7-46b8-fa05-bfedef224406"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "10 20\n",
+            "100\n",
+            "10 20\n"
+          ]
+        }
+      ],
+      "source": [
+        "a=10 #global var\n",
+        "b=20\n",
+        "print(a,b)\n",
+        "def func():\n",
+        "  c=100 # local\n",
+        "  print (c)\n",
+        "  print(a,b)\n",
+        "func()\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a=10 #global var\n",
+        "b=20 #global var\n",
+        "print(a,b)\n",
+        "def func():\n",
+        "  c=100 #local\n",
+        "  global a #to change the value of global variable\n",
+        "  a=110\n",
+        "  print(c)\n",
+        "  print(a,b)\n",
+        "func()\n",
+        "print(a,b)\n",
+        "\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "S-33cga7cYSf",
+        "outputId": "83f833b5-43ad-4282-e00c-9a31d0313e49"
+      },
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "10 20\n",
+            "100\n",
+            "110 20\n",
+            "110 20\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        ""
+      ],
+      "metadata": {
+        "id": "9nUQm2PUeN0W"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
